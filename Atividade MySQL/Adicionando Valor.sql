@@ -3,6 +3,7 @@ USE empresa_Marcos;
 INSERT INTO Funcionario VALUES (1, 'Marcos Silva', 'Rua A', '100', 'Centro', 'São Paulo', 'SP', '01000-000', 15000.00, 1);
 INSERT INTO Funcionario VALUES (2, 'Ana Costa', 'Av. B', '250', 'Jardins', 'São Paulo', 'SP', '02000-000', 8000.00, 1);
 INSERT INTO Funcionario VALUES (3, 'Carlos Souza', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 4500.00, 2);
+INSERT INTO Funcionario VALUES (4, 'Carlos Perreira', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 2500.00, 2);
 
 
 INSERT INTO departamento VALUES (10, 'Tecnologia', 1, '2023-01-10');
@@ -23,3 +24,4 @@ INSERT INTO LocalDep VALUES (20, 'Andar 2 - Bloco B');
 
 INSERT INTO FuncionarioProjo VALUES (1, 101, '40:00:00');
 INSERT INTO FuncionarioProjo VALUES (2, 102, '20:00:00');
+

@@ -1,9 +1,10 @@
+Drop database if exists empresa_marcos;
 create database empresa_Marcos;
 
 use empresa_Marcos;
 create table Funcionario (
 numero integer not null,
-nome varchar(255) not null,
+nomeFun varchar(255) not null,
 rua varchar(200) not null,
 nro varchar(10) not null,
 bairo varchar(100) not null,
@@ -16,9 +17,10 @@ primary key (numero),
 foreign key (numeroSupervisor) references funcionario(numero)
 );
 
+
 create table departamento (
 numero integer not null,
-nome varchar(255) not null,
+nomeDep varchar(255) not null,
 numeroFuncGer integer not null,
 dataIniGer date not null,
 primary key (numero),
@@ -27,7 +29,7 @@ foreign key (numeroFuncGer) references Funcionario (numero)
 
 create table projetos (
 numero integer not null,
-nome varchar(255) not null,
+nomeProj varchar(255) not null,
 numeroDepto integer not null,
 primary key (numero),
 foreign key (numeroDepto) references Departamento (numero)
@@ -35,10 +37,10 @@ foreign key (numeroDepto) references Departamento (numero)
 
 create table dependente (
 numeroFunc integer not null,
-nome varchar(255) not null,
+nomeDep varchar(255) not null,
 dataNasc varchar(10) not null,
 parentesco varchar(30) not null,
-primary key (numeroFunc , Nome),
+primary key (numeroFunc , Nomedep),
 foreign key (numeroFunc) references Funcionario (numero)
 );
 create table LocalDep (
