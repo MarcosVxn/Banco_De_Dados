@@ -1,4 +1,4 @@
-Drop database if exists empresa_marcos;
+
 create database empresa_Marcos;
 
 use empresa_Marcos;

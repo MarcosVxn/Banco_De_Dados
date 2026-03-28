@@ -3,7 +3,11 @@ USE empresa_Marcos;
 INSERT INTO Funcionario VALUES (1, 'Marcos Silva', 'Rua A', '100', 'Centro', 'São Paulo', 'SP', '01000-000', 15000.00, 1);
 INSERT INTO Funcionario VALUES (2, 'Ana Costa', 'Av. B', '250', 'Jardins', 'São Paulo', 'SP', '02000-000', 8000.00, 1);
 INSERT INTO Funcionario VALUES (3, 'Carlos Souza', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 4500.00, 2);
-INSERT INTO Funcionario VALUES (4, 'Carlos Perreira', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 2500.00, 2);
+INSERT INTO Funcionario VALUES (5, 'Marcos Perreira', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 2000.00, 2);
+INSERT INTO Funcionario VALUES (6, 'Vitor Costa', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 1600.00, 2);
+INSERT INTO Funcionario VALUES (7, 'Carlo Perre', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 1500.00, 2);
+INSERT INTO Funcionario VALUES (8, 'Ana Bea', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 2200.00, 2);
+INSERT INTO Funcionario VALUES (9, 'Karol Bor', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 1200.00, 2);
 
 
 INSERT INTO departamento VALUES (10, 'Tecnologia', 1, '2023-01-10');
@@ -12,6 +16,11 @@ INSERT INTO departamento VALUES (20, 'Recursos Humanos', 2, '2023-02-15');
 
 INSERT INTO projetos VALUES (101, 'Sistema Interno', 10);
 INSERT INTO projetos VALUES (102, 'Expansão Sul', 20);
+INSERT INTO projetos VALUES (2, 'Sistema D', 10);
+INSERT INTO projetos VALUES (2, 'Sistema D', 10);
+INSERT INTO projetos VALUES (3, 'Sistema C', 20);
+INSERT INTO projetos VALUES (4, 'Sistema C', 10);
+
 
 
 INSERT INTO dependente VALUES (1, 'Julia Silva', '2015-05-20', 'Filha');
@@ -24,4 +33,6 @@ INSERT INTO LocalDep VALUES (20, 'Andar 2 - Bloco B');
 
 INSERT INTO FuncionarioProjo VALUES (1, 101, '40:00:00');
 INSERT INTO FuncionarioProjo VALUES (2, 102, '20:00:00');
+INSERT INTO FuncionarioProjo VALUES (3, 3, '55:00:00');
+INSERT INTO FuncionarioProjo VALUES (4, 3, '60:00:00');
 
