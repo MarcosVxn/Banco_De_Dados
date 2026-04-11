@@ -33,9 +33,32 @@ select nomeFun, cidade, salario from funcionario order by cidade asc, salario de
 -- 17
 select nomeFun,salario from funcionario where salario >=1000 and salario <= 2000;
 -- 18
-
+select nomeFun from funcionario where cidade like '%ar%';
 -- 19
-
+select max(salario) from funcionario;
 -- 20
-
-
+select min(salario) from funcionario;
+-- 21
+select avg(salario) from funcionario;
+-- 22
+select sum(salario) from funcionario;
+-- 23
+select count(*) from funcionario where salario > 1500;
+-- 24
+select nomeFun from funcionario where cidade like 'São%';
+-- 25
+select count(*) from funcionario where salario > (select avg(salario) from funcionario);
+-- 26
+select nomeFun from funcionario where numeroSupervisor is null;
+-- 27
+select nomeFun from funcionario where numeroSupervisor is not null;
+-- 28
+select f.nomeFun, s.nomeFun as supervisor from funcionario f, funcionario s where f.numeroSupervisor = s.numero;
+-- 29
+select f.nomeFun from funcionario f, FuncionarioProjo fp where f.numero = fp.numeroFunc and fp.horas = (select max(horas) from FuncionarioProjo);
+-- 30
+selecDt distinct f.nomeFun from funcionario f, FuncionarioProjo fp where f.numero = fp.numeroFunc;
+-- 31
+select nomeFun from funcionario where numero not in (select numeroFunc from FuncionarioProjo);
+-- 32
+select f.nomeFun from funcionario f, FuncionarioProjo fp where f.numero = fp.numeroFunc and fp.horas > (select avg(horas) from FuncionarioProjo);

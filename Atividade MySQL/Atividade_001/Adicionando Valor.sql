@@ -3,11 +3,13 @@ USE empresa_Marcos;
 INSERT INTO Funcionario VALUES (1, 'Marcos Silva', 'Rua A', '100', 'Centro', 'São Paulo', 'SP', '01000-000', 15000.00, 1);
 INSERT INTO Funcionario VALUES (2, 'Ana Costa', 'Av. B', '250', 'Jardins', 'São Paulo', 'SP', '02000-000', 8000.00, 1);
 INSERT INTO Funcionario VALUES (3, 'Carlos Souza', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 4500.00, 2);
-INSERT INTO Funcionario VALUES (5, 'Marcos Perreira', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 2000.00, 2);
-INSERT INTO Funcionario VALUES (6, 'Vitor Costa', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 1600.00, 2);
-INSERT INTO Funcionario VALUES (7, 'Carlo Perre', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 1500.00, 2);
-INSERT INTO Funcionario VALUES (8, 'Ana Bea', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 2200.00, 2);
+INSERT INTO Funcionario VALUES (5, 'Marcos Perreira', 'Rua C', '50', 'Lapa', 'Araraquara', 'SP', '03000-000', 2000.00, 2);
+INSERT INTO Funcionario VALUES (6, 'Vitor Costa', 'Rua C', '50', 'Lapa', 'Araraquara', 'SP', '03000-000', 1600.00, 2);
+INSERT INTO Funcionario VALUES (7, 'Carlo Perre', 'Rua C', '50', 'Lapa', 'Araraquara', 'SP', '03000-000', 1500.00, 2);
+INSERT INTO Funcionario VALUES (8, 'Ana Bea', 'Rua C', '50', 'Lapa', 'Araraquara', 'SP', '03000-000', 2200.00, 2);
 INSERT INTO Funcionario VALUES (9, 'Karol Bor', 'Rua C', '50', 'Lapa', 'São Paulo', 'SP', '03000-000', 1200.00, 2);
+INSERT INTO Funcionario VALUES (10, 'Carlo Perre', 'Rua C', '50', 'Lapa', 'Araraquara', 'SP', '03000-000', 1500.00, 2);
+INSERT INTO Funcionario VALUES (11, 'Ana Bea', 'Rua C', '50', 'Lapa', 'Araraquara', 'SP', '03000-000', 2200.00, 2);
 
 
 INSERT INTO departamento VALUES (10, 'Tecnologia', 1, '2023-01-10');
